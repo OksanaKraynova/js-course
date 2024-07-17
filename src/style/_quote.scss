@@ -1,0 +1,66 @@
+.quote {
+
+    padding-bottom: 80px;
+
+    @media(max-width: 767px) {
+        padding: 0px 20px 50px 20px;
+    }
+
+    &__container {
+        padding-top: 25px;
+        border-top: 2px solid rgb(236, 236, 243);
+
+        @media(max-width: 767px) {
+            padding-top: 0;
+            border: none;
+        }
+    }
+
+    // .quote__title
+
+    &__title {}
+
+    // .quote__block
+
+    &__block {
+        margin-top: 30px;
+        gap: 20px;
+
+        @media(max-width: 767px) {
+            margin-top: 16px;
+            flex-direction: column;
+            gap: 17px;
+        }
+    }
+
+    // .quote__image
+
+    &__image {}
+
+    // .quote__text
+
+    &__text {
+        font-size: 22px;
+        line-height: 140%;
+
+        @media(max-width: 767px) {
+            font-size: 18px;
+        }
+    }
+
+    // .quote__name
+
+    &__name {
+        color: rgb(119, 119, 119);
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 26px;
+        display: inline-block;
+
+        @media(max-width: 767px) {
+            margin-top: 13px;
+            font-size: 15px;
+
+        }
+    }
+}

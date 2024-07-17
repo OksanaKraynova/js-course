@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JSCourses</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container flex">
+      <div class="header__logo">
+        <a href="/">
+          <img src="./img/icons/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="header__mobile flex">
+        <nav class="header__nav flex">
+          <div class="header__dropdown flex">
+            <div class="header__item">
+               <span>Статьи</span>
+            <img src="./img/icons/arrow.svg" alt="">
+            </div>
+           
+          </div>
+          <div id="courses" class="header__dropdown flex">
+            <div class="header__item">
+              <span>Курсы</span>
+            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1.5L4 4.5L7 1.5" stroke-width="1.5" />
+            </svg>
+            </div>
+            
+            <ul class="header__list">
+              <li>
+                <a href="">JavaScript Pro</a>
+              </li>
+              <li>
+                <a href="">JavaScript для новичков </a>
+              </li>
+              <li>
+                <a href="">JavaScript ниндзя </a>
+              </li>
+            </ul>
+          </div>
+          <a href="#">Новости</a>
+          <a href="#">О нас</a>
+        </nav>
+        <div class="header__btn">
+          <button id="start" class="btn">Начать учиться</button>
+        </div>
+      </div>
+
+      <div class="header__burger">
+        <img src="./img/icons/menu.svg" alt="">
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="books">
+      <div class="books__wrapper container">
+        <h1 class="books__title">Путь JavaScript</h1>
+        <div class="books__container">
+          <div class="books__date">
+            <div class="books__num">
+              <span>12 </span>
+              <img src="./img/icons/arrow-full.svg" alt="">
+            </div>
+
+            Апреля
+
+          </div>
+          <div class="books__image">
+            <img src="./img/books-1.jpg" alt="">
+          </div>
+
+
+
+        </div>
+        <div class="books__text">Можно выделить три основных направления для прогресса JavaScript </div>
+      </div>
+    </section>
+    <section class="quote">
+      <div class="quote__container container">
+        <h3 class="quote__title title">Серверный JavaScript</h3>
+        <div class="quote__block flex">
+          <div class="quote__image">
+            <img src="./img/icons/Subtract.png" alt="">
+          </div>
+          <div class="quote__text">
+            <p>Разработчики и клиенты часто неправильно понимают, что такое система. Они видят графический интерфейс и
+              думают, что он и есть система. Они определяют систему в терминах графического интерфейса и считают, что
+              должны сразу начать работу с графическим интерфейсом. Они не понимают важнейшего принципа: ввод/вывод не
+              важен.</p>
+            <span class="quote__name">
+              — Р. Мартин
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advertisement">
+      <div class="advertisement__wrapper">
+        <div class="advertisement__image">
+          <img class="advertisement__desktop" src="./img/books.jpg" alt="">
+          <img class="advertisement__mobile" src="./img/bg.jpg" alt="">
+        </div>
+        <div class="advertisement__text">
+          Реклама на <a href="#">blabla.com</a>
+        </div>
+      </div>
+
+    </section>
+    <section class="conclusion">
+      <div class="conclusion__container container">
+        <h3 class="conclusion__title title">Заключение</h3>
+        <p>Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект.
+          Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на то, что все эти
+          характерологические черты отсылают не к единому образу нарратора, интегрирует мифопоэтический хронотоп.
+          Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
+      </div>
+
+    </section>
+    <section class="feedback">
+      <div class="feedback__container container">
+        <div class="feedback__title big-title">Что вы думаете об этой книге?</div>
+        <div class="feedback__form">
+          <form class="form">
+            <div class="form__estimate">
+              <div class="form__title">Оцените статью</div>
+              <div class="form__row">
+                <span>4</span>
+                <div class="form__rating">
+
+
+
+                  <!-- по умолчанию 0 -->
+                  <input name="fst" value="0" type="radio" disabled checked />
+
+                  <!-- рейтинг 1 -->
+                  <label for="fst-1">
+                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z" />
+                    </svg>
+
+                  </label>
+                  <input name="fst" id="fst-1" value="1" type="radio" />
+
+                  <!-- рейтинг 2 -->
+                  <label for="fst-2">
+                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z" />
+                    </svg>
+
+                  </label>
+                  <input name="fst" id="fst-2" value="2" type="radio" />
+
+                  <!-- рейтинг 3 -->
+                  <label for="fst-3">
+                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z" />
+                    </svg>
+
+                  </label>
+                  <input name="fst" id="fst-3" value="3" type="radio" />
+
+                  <!-- рейтинг 4 -->
+                  <label for="fst-4">
+                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z" />
+                    </svg>
+
+                  </label>
+                  <input name="fst" id="fst-4" value="4" type="radio" />
+
+                  <!-- рейтинг 5 -->
+                  <label for="fst-5">
+                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z" />
+                    </svg>
+
+                  </label>
+                  <input name="fst" id="fst-5" value="5" type="radio" />
+                </div>
+              </div>
+            </div>
+            <div class="form__fields">
+              <div class="form__title">Добавить комментарий к книге</div>
+              <div class="form__inputs flex">
+                <div class="form__block">
+                  <input type="text" class="true" name="" id="name">
+                  <label for="name" class="true">Имя</label>
+                </div>
+
+                <div class="form__block">
+                  <input  class="true" type="email" name="" id="email">
+                  <label for="email">Email</label>
+                </div>
+
+                <div class="select">
+                  <div class="select__header">
+                    <span class="select__current"> Выберите книгу</span>
+                    <img src="./img/icons/select.svg" alt="">
+                  </div>
+                  <div class="select__body">
+                    <div class="select__item">JavaScript ниндзя</div>
+                    <div class="select__item">Pragmatic Guide to JavaScript</div>
+                    <div class="select__item">Pro JavaScript Techniques</div>
+                    <div class="select__item">Выразительный JavaScript</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form__block form__textarea">
+                <textarea name="" id="text"></textarea>
+                <label for="text">Ваш отзыв</label>
+              </div>
+              <div class="form__btn btn">Отправить</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="posts">
+      <div class="posts__container container">
+        <div class="posts__title big-title">Похожие посты</div>
+        <div class="posts__slider">
+          <div class="posts__wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="./img/react.jpg" alt="">
+              </div>
+              <div class="card__date">12 декабря</div>
+              <div class="card__title">События жизненного цикла ReactJS</div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="./img/grid.jpg" alt="">
+              </div>
+              <div class="card__date">10 декабря</div>
+              <div class="card__title">CSS Grids. Полное руководство</div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="./img/js.jpg" alt="">
+              </div>
+              <div class="card__date">5 декабря</div>
+              <div class="card__title">Асинхронность в JavaScript</div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <div class="modal ">
+      <div class="modal__overlay">
+        <div class="modal__content">
+          <button class="modal__close">
+            <img src="./img/icons/close.svg" alt="">
+          </button>
+          <div class="modal__title title">Начать учиться </div>
+          <p>Оставьте заявку и наш менеджер вам перезвонит.</p>
+          <form  class="modal__form">
+            <div class="modal__block">
+              <input  class="true" type="text" name="" id="name2">
+              <label for="name2">Как вас зовут</label>
+            </div>
+            <div class="modal__block">
+              <input type="email" class="true" name="" id="email2">
+              <label for="email2" >Ваш email</label>
+            </div>
+
+            <button class="btn">Отправить</button>
+          </form>
+          <div class="modal__police">
+            Нажимая кнопку «Отправить», вы соглашаетесь
+            <a href="">с политикой конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>

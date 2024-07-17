@@ -1,0 +1,106 @@
+.posts {
+
+    padding: 60px 0px 101px 0px;
+    background-color: #F8F8FA;
+
+    @media(max-width: 767px) {
+        padding: 30px 20px 66px 20px;
+    }
+
+    &__container {}
+
+    // .posts__title
+
+    &__title {}
+
+    // .posts__slider
+
+    &__slider {
+        margin-top: 32px;
+
+        @media(max-width: 767px) {
+            width: 280px;
+            overflow-x: hidden;
+            margin: 18px auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding-bottom: 35px;
+
+            .swiper-pagination {
+                position: absolute;
+                bottom: 0px !important;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+                background-color: #bebebf;
+            }
+
+            .swiper-pagination-bullet-active {
+                width: 15px;
+                height: 15px;
+                background-color: #2D1AA7;
+            }
+        }
+
+    }
+
+    // .posts__wrapper
+
+    &__wrapper {
+        display: flex;
+        gap: 30px;
+
+        @media(max-width: 767px) {
+            gap: 0px;
+        }
+    }
+}
+
+.card {
+
+    flex: 0 0 226px;
+
+    @media(max-width: 767px) {
+        flex: 0 0 100%;
+    }
+
+    &__image {
+        border-radius: 18px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    // .card__date
+
+    &__date {
+        color: rgb(119, 119, 119);
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 2%;
+        margin: 12px 0px 7px 0px;
+    }
+
+    // .card__title
+
+    &__title {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        max-width: 188px;
+
+        @media(max-width: 767px) {
+            max-width: none;
+        }
+    }
+}
