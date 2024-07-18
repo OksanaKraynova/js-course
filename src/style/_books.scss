@@ -16,6 +16,18 @@
         margin-top: 30px;
         position: relative;
 
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 18px;
+            height: 13px;
+            left: 77px;
+            background: url(../img/icons/Triangle.svg);
+            @media(max-width: 767px){
+                display: none;
+            }
+        }
 
 
         @media(max-width: 767px) {
